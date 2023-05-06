@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>LEAFROJECT</title>
+    <script type="module" src="src/classfunction.js"></script>
+    <script type="module" src="src/classproject.js"></script>
+    <script type="module" src="src/classtodo.js"></script>
+    <script type="module" src="src/form.js"></script>
+    <script type="module" src="src/resize.js"></script>
+    <script type="module" src="src/uselocalstorage.js"></script>
+  </head>
+  <body>
+    <header>LEAFROJECT</header>
+    <main>
+      <div id="left-panel">
+        <h1>Left Panel</h1>
+        <div id="form-container">
+          <h2>Create Form<br /></h2>
+          <form id="create-form" class="form">
+            <input
+              type="text"
+              class="form-input"
+              name="project-input"
+              placeholder="Select or Write Project!"
+              list="project-select"
+            />
+            <datalist id="project-select"><option value="Not Assigned"></option></datalist>
+            <input type="text" class="form-input" name="todo-input" placeholder="Write What To do!" />
+            <div><input type="submit" value="Submit" /></div>
+          </form>
+        </div>
+        <ul id="project-list">
+          <h2>Project List</h2>
+        </ul>
+      </div>
+      <div id="panel-handler"></div>
+      <div id="right-panel">
+        <h1>Right Panel</h1>
+        <div id="today-canvas-container">Today Graph</div>
+        <div id="gantt-canvas-container">Weekly ~ Yearly Graph</div>
+        <div id="scale-container">scaler</div>
+      </div>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
